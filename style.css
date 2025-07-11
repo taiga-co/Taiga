@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+/**header**/
+.header-content{
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/**navbar**/
+.header-all-button{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: black;
+    width: 50px;
+    font-family: Edwardian Script ITC, French Script MT, Lucida Handwriting, and Monotype Corsiva;
+    padding-bottom: 4px;
+}
+.header-all-button i{
+    font-size: 1rem;
+}
+.header-content-2 li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    font-size: 2rem;
+    margin-right: 15px;
+    font-family: Edwardian Script ITC, French Script MT, Lucida Handwriting, and Monotype Corsiva;
+    color: black;
+    padding-bottom: 2px;
+}
+.header-content-2 a{
+    text-decoration: none;
+}
+.box:hover{
+    border-bottom: 3px solid black ;
+    border-radius: 2px;
+    font-weight: 900;
+}
+/**main**/
+.main-content{
+    background-color: white;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+}
+.main-h1-heading h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+/**button**/
+.get-started-button{
+    display: flex;
+    margin-top: 30vh;
+    justify-content: center;
+}
+.button-home-page{
+    color: red;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: 0.5s ease-out;
+    border: 1px solid red;
+}
+.button-home-page:hover{
+    padding: 25px;
+    color: white;
+    background-color: red;
+    font-size: 2.2rem;
+}
