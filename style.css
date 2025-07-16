@@ -58,8 +58,13 @@
 }
 /**button**/
 .get-started-button{
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    margin-top: 30vh;
+}
+.get-started-button{
+    display: flex;
     justify-content: center;
 }
 .button-home-page{
@@ -78,7 +83,7 @@
     background-color: red;
     font-size: 2.2rem;
 }
-@media (min-width:360px) and (max-width:414px) {
+@media (min-width:320px) and (max-width:375px) {
     .main-h1-heading h1 {
         font-size: 1rem;
         margin-left: 5px;
@@ -93,8 +98,17 @@
         font-size: 1.7rem;
     }
     .header-content-2 li {
-        font-size: 1.5rem;
-        padding-bottom: 7px;
+        font-size: 1rem;
+        padding-bottom: 12px;
+        margin-right: 5px;
     }
-    
+    .header-all-button{
+        font-size: 1rem;
+        margin-left: 7px;
+        padding-bottom: 13px;
+        margin-top: 14px;
+    }
+    .header-all-button i{
+        font-size: 0.85rem;
+    }
 }
