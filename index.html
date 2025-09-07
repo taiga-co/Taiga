@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>taiga</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="singin.css">
     <link rel="stylesheet" href="style.css">
+    <script src="first.js" ></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="header-all-button box">
-                <i class="fa-solid fa-bars"></i>
-                All
+            <div class="header-all-button">
+                <button onclick="toggleDropdown()" class="dropbtn header-all-button box"><i class="fa-solid fa-bars"></i> All</button>
             </div>
+            <!-- drop downlist -->
+            <div id="dropdownMenu" class="dropdown-content">
+    <li class="##">
+        <a href="#" class="dropdown-profile">HELLO, USER</a>
+        <a href="#" class="#"> </a>
+    </li>
+    <li class="##">
+    <a href="#">ABOUT US</a>
+    <a href="##"><i class="fa-solid fa-plus "></i></a>
+    </li>
+    <li class="##">
+    <a href="#">OUR TEAM</a>
+    <a href="##"><i class="fa-solid fa-plus "></i></a>
+    </li>
+    <li class="##">
+    <a href="#">NOTES</a>
+    <a href="##"><i class="fa-solid fa-plus "></i></a>
+    </li>
+    <li class="##">
+    <a href="#">NCERT SOLUTION</a>
+    <a href="##"><i class="fa-solid fa-plus "></i></a>
+    </li>
+    <li class="##">
+    <a href="#">NCERT CHAPTERS EXPLANATION</a>
+    <a href="##"><i class="fa-solid fa-plus "></i></a>
+    </li>
+    
+  </div>
+
+  <!-- Dark overlay -->
+  <div id="overlay" class="overlay"></div>
+
             <ul class="header-content-2">
-                <a href='later'><li class="box">Notes</li></a>
-                <a href='later'><li class="box">Questions & Answers</li></a>
-                <a href='later'><li class="box">Sign in</li></a>
+                <a href='##'><li class="box">Notes</li></a>
+                <a href='##'><li class="box">Questions & Answers</li></a>
+                <a href='##'><li class="box">Profile</li></a>
             </ul>
         </div>
     </header>
     <hr>
-    <div class="main-content">
-        <div class="main-h1-heading">
-            <h1>
-                Welcome to Taiga. Here you can get notes & ncert solution of class-9 from rajasthan board. 
-            </h1>
-            <div class="get-started-button">
-                <a href="later" class="button-home-page" role="button">Get Started <i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-        </div>
+<div class="form-box-1-main">
+    <div class="form-box-1">
+        <h2>Student Info</h2>
+        <form onsubmit="redirectToPage(event)">
+            <label for="username">Enter your name-></label>
+            <input type="text" placeholder="Name" id="username" name="username" required>
+        
+            <label for="phone">Enter your contact no.-></label>
+            <input type="tel" id="phone" placeholder="Contact No." name="phone" pattern="[0-9]{10}" required>
+       
+            <input type="submit" value="Submit">
+        </form>
     </div>
+</div>
 </body>
-</html> 
+</html>

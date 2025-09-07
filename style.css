@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'alegreya';
+    src: url(fonts/Alegreya-Italic-VariableFont_wght.ttf);
+}
 *{
     margin: 0%;
     padding: 0;
@@ -24,6 +28,65 @@
 .header-all-button i{
     font-size: 1rem;
 }
+ .dropbtn {
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+      position: fixed;
+      top: 0;
+      left: -350px; /* Hidden by default */
+      height: 100%;
+      width: 350px;
+      background-color: white;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+      overflow-y: auto;
+      transition: left 0.3s ease;
+      z-index: 999;
+      justify-content: space-between;
+    }
+    .dropdown-content.show {
+      left: 00px; /* Slides in next to the sidebar */
+    }
+    .dropdown-content a {
+      display: block;
+
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+      font-family: 'alegreya' , sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+    }
+.dropdown-content i{
+  font-weight: lighter;
+  font-size: 25px;
+}
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Overlay background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      width: calc(100% - 200px);
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 998;
+      display: none;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+
+/**2 part of navbar**/
 .header-content-2 li{
     text-decoration: none;
     list-style-type: none;
@@ -55,89 +118,4 @@
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
-}
-/**button**/
-.get-started-button{
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.get-started-button{
-    display: flex;
-    justify-content: center;
-}
-.button-home-page{
-    color: red;
-    background-color: white;
-    padding: 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 2rem;
-    transition: 0.5s ease-out;
-    border: 1px solid red;
-}
-.button-home-page:hover{
-    padding: 25px;
-    color: white;
-    background-color: red;
-    font-size: 2.2rem;
-}
-@media (max-width:375px) {
-    .main-h1-heading h1 {
-        font-size: 1rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .button-home-page{
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-    .button-home-page:hover{
-        padding: 15px;
-        font-size: 1.7rem;
-    }
-    .header-content-2 li {
-        font-size: 1rem;
-        padding-bottom: 12px;
-        margin-right: 5px;
-    }
-    .header-all-button{
-        font-size: 1rem;
-        margin-left: 7px;
-        padding-bottom: 13px;
-        margin-top: 14px;
-    }
-    .header-all-button i{
-        font-size: 0.85rem;
-    }
-}
-@media (min-width:320px) and (max-width:375px) {
-    .main-h1-heading h1 {
-        font-size: 1rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .button-home-page{
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-    .button-home-page:hover{
-        padding: 15px;
-        font-size: 1.7rem;
-    }
-    .header-content-2 li {
-        font-size: 1rem;
-        padding-bottom: 12px;
-        margin-right: 5px;
-    }
-    .header-all-button{
-        font-size: 1rem;
-        margin-left: 7px;
-        padding-bottom: 13px;
-        margin-top: 14px;
-    }
-    .header-all-button i{
-        font-size: 0.85rem;
-    }
 }

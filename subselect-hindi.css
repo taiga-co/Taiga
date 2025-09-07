@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.option-back{
+    margin-top: 1rem;
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.option{
+    width: 30%;
+    height: 66.7%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.li-option{
+    background-color: white;
+    color: black;
+    font-family: Edwardian Script ITC, French Script MT, Lucida Handwriting, and Monotype Corsiva;
+    border-bottom-left-radius: inherit;
+    font-size: 1.5rem;
+    border-bottom-right-radius: inherit;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+/**main work **/
+.main-hindi-reader{
+    background-image: url(image/Hindi-reader-file-pic-for-web.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    justify-content: center;
+}
+.main-hindi-grammer{
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    justify-content: center;
+}
+               
